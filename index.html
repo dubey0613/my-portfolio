@@ -9,22 +9,84 @@
 </head>
 <body>
     <div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/images/logo.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
-        </nav>
-        <div class="header-text">
-            <p>Web Developer</p>
-            <h1>Hi, I am <span>Sarthak</span><br>Dubey from India</h1>
+        <div class="container">
+            <nav>
+                <img src="images/images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Sarthak</span><br>Dubey from India</h1>
+            </div>
         </div>
     </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto asperiores nam eaque iste vel esse nostrum ullam, laudantium facilis aliquam recusandae est illum ut, a autem deleniti eum quaerat!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('work')">Community Work</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Java Development</span><br>Java based Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="work">
+                        <ul>
+                            <li><span>Oct 2022 - Present</span><br>Community Manager at Skill Eliters</li>
+                            <li><span>Oct 2022 - Present</span><br>Founding member and PR Head at DevUP</li>
+                            <li><span>May 2023 - Present</span><br>Contibuter at GirlScript Summer Of Code</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>B.Tech in Computer Science and Engineering</li>
+                            <li><span>2019 - 2021</span><br>Intermediate from ISC Board</li>
+                            <li><span>2019</span><br>High School from ICSE Board</li>
+                        </ul>
+
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <!--<link rel="javascript" href="index.js">-->
 </body>
 
 </html>
