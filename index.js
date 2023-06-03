@@ -1,11 +1,19 @@
-let tablinks = document.getElementsByClassName("tab-links")
-let tabcontents = document.getElementsByClassName("tab-contents")
+let typingText= document.querySelector('.change-txt')
+let Designation=['Frontend Developer','Java Developer','Cloud Enthusiast','Web Developer']
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
+
+let arrayIndex= 0;
+
+function changingtxt(){
+    if(arrayIndex<Designation.length){
+        typingText.innerHTML=Designation[arrayIndex]
+        arrayIndex+=1
     }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
+    else{
+        arrayIndex=0
+        typingText.innerHTML=Designation[arrayIndex]
+        arrayIndex+=1
     }
 }
+setInterval(changingtxt, 5000)
+changingtxt()

@@ -7,12 +7,13 @@
     <title>dubey0613 Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ce45dcfbaf.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/images/logo.png" alt="logo" class="logo">
+                <a href="index.html"><img src="images/images/logo.png" alt="logo" class="logo"></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About Me</a></li>
@@ -24,7 +25,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <div class="change-txt"></div>
                 <h1>Hi, I am <span>Sarthak</span><br>Dubey from India</h1>
             </div>
         </div>
@@ -40,7 +41,13 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto asperiores nam eaque iste vel esse nostrum ullam, laudantium facilis aliquam recusandae est illum ut, a autem deleniti eum quaerat!</p>
+                    <p id="col">I am a<span> web developer</span> with expertise in languages such as <span>Java, C, Kotlin, HTML, CSS, and JavaScript.</span> Currently pursuing my B.Tech in CSE (AI/ML), I am passionate about technology and the possibilities it holds for transforming our lives.
+
+                        Apart from my web development skills, I am also eager to learn about <span>cloud computing</span> and its applications in the real world. My interest in the field of <span>AI and ML</span> has driven me to pursue a career that involves cutting-edge technologies and innovation.
+                        
+                        My goal is to <span>leverage my skills and knowledge to create innovative solutions that can solve real-world problems.</span> I believe in continuous learning, and I am always on the lookout for opportunities to grow and expand my skill set.
+                        <br>
+                        Thank you for taking the time to visit my profile.<br>If you think we can collaborate or have any exciting ideas to share, feel free to connect with me!</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -49,8 +56,9 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>Java Development</span><br>Java based Development</li>
+                            <li><span>Web Development</span></li>
+                            <li><span>Java Development</span></li>
+                            <li><span>Android Development</span></li>
                         </ul>
                     </div>
 
@@ -86,19 +94,19 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="#">Learn More</a>
+                    <p>The languages and frameworks I've worked with include Html, Css, JavaScript, React, Bootstrap, Flask</p>
+                    <a href="https://www.github.com/dubey0613" target="_blank">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-java"></i>
                     <h2>Java Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p>I have been working with Java now for about more than 5 years</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-android"></i>
                     <h2>Android Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p>Having a knowledge of Android Development using the languages Java and Kotlin</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
@@ -117,29 +125,29 @@
                 <div class="work">
                     <img src="images/images/work-1.png" >
                     <div class="layer">
-                        <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>E-Commerce Website</h3>
+                        <p>An E-Commerce Website made with React.js</p>
+                        <a href="https://celadon-eclair-0b78e1.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/images/work-2.png">
                     <div class="layer">
-                        <h3>Project 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Todos List</h3>
+                        <p>A Todos List created using React.js and stores data in the local storage</p>
+                        <a href="https://zingy-tarsier-69913d.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/images/work-3.png">
                     <div class="layer">
-                        <h3>Project 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Leads Tracker Chrome Extension</h3>
+                        <p>Created using Vanilla JS</p>
+                        <a href="https://chrome.google.com/webstore/detail/leads-tracker/pjmgfnkdjjjeeebfheomfbhjjmjafipk"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://www.github.com/dubey0613" target="_blank" class="btn">See more</a>
         </div>
     </div>
 
@@ -152,10 +160,10 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i> dubey.sarthak0613@gmail.com</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-reddit"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.telegram.com/dubey0613" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.twitter.com/dubey0613" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/dubey0613" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.github.com/dubey0613" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a href="images/images/mycv.pdf" class="btn btn2">Download CV</a>
                 </div>
@@ -213,7 +221,6 @@
 
 
     </script>
-    <!--<link rel="javascript" href="index.js">-->
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw-5QgLY7u_ZB6ne2pR5bc-jf3lAzyJsYoUWArSj0fjF9yAK5Rfuh6m6M9Nxvo2b9evYA/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -231,6 +238,7 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script src="index.js"></script>
 </body>
 
 </html>
